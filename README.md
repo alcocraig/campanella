@@ -5,6 +5,7 @@
     Written by: Michele Lizzit <lizzit.it>, 21 Apr 2017
     Last update: 21 Apr 2017
     Version: 1.1
+    Converted some of the Language to English
 
 
 Campanella - Open-source bell management system  
