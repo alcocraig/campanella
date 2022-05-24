@@ -29,17 +29,18 @@
 ###
 
 #TODO: verificare accessibilita internet prima di suonare
+#changed the io pins 7 and 15 to reflect my hardware
 
 import time
 import os
 import RPi.GPIO as GPIO
 
 #pin numbers are defined using GPIO.BOARD numeration
-GPIO_CAMPANELLA_PIN = 7
+GPIO_CAMPANELLA_PIN = 15
 GPIO_LED_RED_PIN = 13
 GPIO_LED_GREEN_PIN = 16
 GPIO_LED_BLUE_PIN = 18
-GPIO_BUTTON_PIN = 15
+GPIO_BUTTON_PIN = 7
 
 
 def campanella_suona(sound_type) : #ring bell
