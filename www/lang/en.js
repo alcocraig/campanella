@@ -25,7 +25,7 @@ var langEN = {
 	</br>\
 	</br>\
 	</br>\
-	Disabilita o abilita la campanella.</br>\
+	Disable or enable the bell.</br>\
 	<i>Default: enabled</i>\
 	</br>\
 	</br>\
@@ -33,8 +33,8 @@ var langEN = {
 	</br>\
 	</br>\
 	</br>\
-	Inserisci gli orari a cui fare suonare la campanella\
-	Scrivere l'ora nel formato aaaa-MM-gg hh:mm:ss oppure w hh:mm:ss dove w è compreso tra 1 e 7, ed indica il giorno della settimana (es 1 = lunedì) oppure nel formato hh:mm:ss per fare squillare la campanella ogni giorno.\
+	Enter the times for the bell to ring\
+	Write the time in the format aaaa-MM-gg hh:mm:ss or w hh:mm:ss dove w è between tra 1 e 7, and indicates the day of the week (eg 1 = Monday) or in the format hh:mm:ss to make the bell ring every day.\
 	</br>\
 	</br>\
 	</br>\
@@ -48,20 +48,20 @@ var langEN = {
 	</br>\
 	</br>\
 	<b>\
-	Inserisci l'ora in cui il raspberry pi deve sincronizzare l'orologio interno con il server NTP</br>\
-	NOTA:</br>\
-	questa procedura richiede 35 secondi durente il quale la campanella viene temporaneamente disabilitata.</br>\
-	In caso di mancanza di connessione a internet o in caso di errato indirizzo NTP la sincronizzazione fallisce e NON viene riportato alcun errore nella pagina status</br>\
+	Enter the time when the raspberry pi should synchronize the internal clock with the server NTP</br>\
+	NOTE:</br>\
+	this procedure takes 35 seconds during which the bell is temporarily disabled.</br>\
+	In case of lack of internet connection or in case of wrong NTP address the synchronization fails and NO error is reported on the status page</br>\
 	</b>\
-	È consigliato impostare l'ora di notte</br>\
+	It is recommended to set the time at night</br>\
 	<i>Default: 02:00:00</i>\
 	</br>\
 	</br>\
 	</br>\
 	</br>\
-	Il server NTP con cui sincronizzare l'ora\
+	The NTP server to synchronize the time with\
 	</br>\
-	Il server consigliato è ntp1.inrim.it del Laboratorio di Tempo e Frequenza Campione.\
+	The recommended server is ntp1.inrim.it from the Sample Time and Frequency Laboratory.\
 	</br>\
 	Default: ntp1.inrim.it\
 	</br>\
@@ -74,17 +74,17 @@ var langEN = {
 	<b>\
 	NOTA:\
 	</br>\
-	Il volume è espresso in dB, per questo è logaritmico\
+	The volume of the bell in dB, therefore it is logarithmic\
 	</br>\
 	</b>\
 \
 	<i>Default: 4</i>\
 	</br>\
 	</br>\
-	Seleziona per suonare la campanella ora\
+	Select to ring the bell now\
 	</br>\
 	</br>\
-	Seleziona per sincronizzare ora l'orologio interno con il server NTP\
+	Select to synchronize the internal clock with the server now NTP\
 	</br>\
 	</br>\
 	</br>\
@@ -96,72 +96,72 @@ var langEN = {
 	creditsTitle: "Credits: ",
 	creditsText: "\
 	<br><br>\
-	Il programma Python è stato scritto da<strong> Michele Lizzit.</strong><br>\
-	Il CSS è stato scritto da <strong>Daniele Toppano e Marco Ferrari.</strong><br>\
-	L'HTML è stato scritto da <strong>Michele Lizzit e Daniele Toppano.</strong><br>\
-	Il PHP è stato scritto da <strong>Michele Lizzit.</strong><br>\
-	Il logo \"CopernicoDrin\" è stato creato da <strong>Marco Ferrari.</strong><br>\
-	Il software per il controllo dell'LCD è stato scritto da <strong>Michele Lizzit.</strong><br><br>\
+	The Python program was written by<strong> Michele Lizzit.</strong><br>\
+	The CSS was written by <strong>Daniele Toppano e Marco Ferrari.</strong><br>\
+	HTML was written by <strong>Michele Lizzit e Daniele Toppano.</strong><br>\
+	PHP was written by<strong>Michele Lizzit.</strong><br>\
+	The logo \"CopernicoDrin\" è stato creato da <strong>Marco Ferrari.</strong><br>\
+	The software for LCD control was written by<strong>Michele Lizzit.</strong><br><br>\
 	Michele Lizzit<br> <i>michele@lizzit.it - <a href=\"https://lizzit.it\">lizzit.it</a></i><br>\
 	Daniele Toppano <br><i>danitoppano@gmail.com</i><br>\
 	Marco Ferrari <br><i>marcogio99@gmail.com</i><br>\
 	<br>\
-	Il computer che gestisce la campanella e il server è un Raspberry PI modello B con Raspbian<br>\
-	Il software è scritto in PHP e Python<br>\
-	Il display LCD è gestito da una scheda Arduino UNO che legge i dati, tramite seriale, dal RaspberryPi<br>\
-	Ultima modifica del software 26/04/2016<br>\
+	The computer that manages the bell and the server is a Raspberry PI model B con Raspbian<br>\
+	The software is written inPHP e Python<br>\
+	The LCD display is managed by an Arduino UNO board which reads the data, via serial, fromRaspberryPi<br>\
+	Last software modification 26/04/2016<br>\
 	<br>\
-	Il software è rilasciato in licenza GNU AGPLv3, il sorgente è gratuitamente scaricabile da <a href=\"https://lizzit.it/campanella\">lizzit.it/campanella</a>\
+	The software is licensed GNU AGPLv3, the source is free to download from <a href=\"https://lizzit.it/campanella\">lizzit.it/campanella</a>\
 	",
-	settingsTitle: "Modifica le impostazioni: ",
+	settingsTitle: "Change your settings: ",
 	settingsReset: "Reset",
-	settingsUpdate: "Aggiorna impostazioni",
-	settingsRingNow: "Suona campanella ORA",
+	settingsUpdate: "Update settings",
+	settingsRingNow: "	Ring the bell NOW",
 	settingsVolume: "Volume (da -100 a 4)",
-	settingsTime: "Ora in cui sincronizzare il server ntp nel formato hh:mm:ss",
+	settingsTime: "Time to synchronize the ntp server in the format hh:mm:ss",
 	settingsNTP: "Server NTP",
-	settingsSound: "Imposta suono",
-	settingsNTPnow: "Aggiorna NTP ORA",
+	settingsSound: "Set sound",
+	settingsNTPnow: "Update NTP NOW",
 	settingsEnable: "Enable/Disable campanella",
 	settingsEnabledText: "Enabled",
 	settingsDisabledText: "Disabled",
-	settingsTimetable: "Orari",
-	statusServer: "Indicazioni sullo stato del server",
+	settingsTimetable: "Timetables",
+	statusServer: "Server status information",
 	statusUSB: "Check USB ports",
-	statusSDspace: "Spazio usato nella SD:",
+	statusSDspace: "Space used in the SD:",
 	statusSD: "Memoria SD:",
 	statusRAM: "RAM:",
-	statusOptions: "Contenuto del file OPTIONS.txt",
-	statusErrors: "Errori del server:",
-	statusNetwork: "Stato della rete",
-	statusTitle: "Stato del sistema: ",
-	rebootConfirm: "Sei sicuro di riavviare/spegnere il sistema?",
-	usbStatus: "Indicazioni sullo stato delle USB del server",
+	statusOptions: "Content of file OPTIONS.txt",
+	statusErrors: "Server errors:",
+	statusNetwork: "Network status",
+	statusTitle: "System status: ",
+	rebootConfirm: "Are you sure to reboot/shut down the system?",
+	usbStatus: "Indication of the USB status of the server",
 	textBack: "Back",
-	guideTitle: "Presentazione del progetto: ",
+	guideTitle: "Project presentation: ",
 	guideContent: "\
-	Il software funziona su Raspberry PI Modello A o B e su qualunque macchina Linux.<br>\
+	The software runs on Raspberry PI Model A or B and on any Linux machine.<br>\
 	For more information on the software please visit:\
 	<a href=\"https://lizzit.it/campanella\">https://lizzit.it/campanella</a>\
 	",
 	uploadText: "Upload",
 	updateSettings: "Settings",
-	uploadTitle: "Carica un nuovo suono sul server: ",
-	uploadInfo: "NOTA: sono accettati solo file .wav",
-	uploadLabel: "Carica il tuo file:",
-	updateTitle: "Aggiorna impostazioni: ",
-	updateSystemReboot: "Il sistema verrà riavviato, attendi.",
-	updateDone: "Il sistema è funzionante.",
+	uploadTitle: "Upload a new sound to the server: ",
+	uploadInfo: "NOTE: Only files are accepted .wav",
+	uploadLabel: "Upload your file:",
+	updateTitle: "Update settings: ",
+	updateSystemReboot: "The system will restart, please wait.",
+	updateDone: "The system is functional.",
 	homeText: "Home",
 	title404: "404 Not Found: ",
-	text404: "Il file non e' presente in questo server",
-	selectSoundDeleteAllButton: "Elimina tutti i suoni",
-	selectSoundSetButton: "Imposta il suono",
-	selectSoundUpload: "Carica un nuovo suono sul server",
-	selectSoundDeleteButton: "Elimina suono selezionato",
-	selectSoundTitle: "Pannello di gestione dei suoni",
-	selectSoundInfo: "Qui puoi impostare il suono riprodotto dalle casse.",
-	selectSoundDelete: "Elimina un suono in memoria",
-	selectSoundSetInfo: "Imposta il suono"
+	text404: "	The file is not present on this server",
+	selectSoundDeleteAllButton: "Delete all sounds",
+	selectSoundSetButton: "Set the sound",
+	selectSoundUpload: "	Upload a new sound to the server",
+	selectSoundDeleteButton: "Delete selected sound",
+	selectSoundTitle: "Sound management panel",
+	selectSoundInfo: "Here you can set the sound played by the speakers.",
+	selectSoundDelete: "Delete a sound in memory",
+	selectSoundSetInfo: "Set the sound"
 
 };

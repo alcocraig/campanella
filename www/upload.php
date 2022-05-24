@@ -45,11 +45,11 @@ if(isset($_POST['action']) and $_POST['action'] == "upload")
         }
         else if($file['error'] == UPLOAD_ERR_INI_SIZE)
         {
-        	echo "<pre>Errore il file eccede la dimensione specificata nel file php.ini (20M)</pre>";
+        	echo "<pre>Error the file exceeds the size specified in the file php.ini (20M)</pre>";
         }
         else if($file['error'] == UPLOAD_ERR_NO_FILE)
         {
-        	echo "<pre>Errore: il file selezionato non esiste (o non hai selezionato alcun file)</pre>";
+        	echo "<pre>Errore: the selected file does not exist (or you have not selected any files)</pre>";
         }
     }
 }

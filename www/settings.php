@@ -59,7 +59,7 @@ if (isset($_POST['enable']) && isset($_POST['orari']) && isset($_POST['ntp_updat
 		$update_ntp_now = 0;
 	}
 
-	$options_string = "#le righe che iniziano con # vengono scartate\n"
+	$options_string = "#lines starting with # are discarded\n"
 	. $lines .
 	"\n#enable\n"
 	. $_POST['enable'] .
@@ -73,9 +73,9 @@ if (isset($_POST['enable']) && isset($_POST['orari']) && isset($_POST['ntp_updat
 	. $_POST['ntp_update_time'] .
 	"\n#update ntp now\n"
 	. $update_ntp_now .
-	"\n#NON MODIFICARE QUESTO COMMENTO squilla ora\n"
+	"\n#DO NOT CHANGE THIS COMMENT ring now\n"
 	. $squilla_ora .
-	"\n#num_options includendo questa\n" .
+	"\n#num_options including this one\n" .
 	"9\n"
 	. $timetable;
 
@@ -126,7 +126,7 @@ textarea {
 			<div id="main" style="width:540px;"> <p> <span id="title" class="settingsTitle"></span></p>
 				<?php
 				if ($error == 1) {
-					echo '		<script language="javascript" type="text/javascript"> alert("Hai compilato male il form")</script>';
+					echo '		<script language="javascript" type="text/javascript"> alert("You have filled in the form incorrectly")</script>';
 				}
 				?>
 
